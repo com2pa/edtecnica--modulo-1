@@ -378,6 +378,10 @@ footer {
     div#nav-bar-links-container {
         font-size: 1.3rem;
     }
+    h1 {
+        padding: 1%;
+        font-size: 3rem;
+    }
     input[type="text"] {
         height: 40px;
         width: 85%;
