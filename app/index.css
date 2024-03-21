@@ -1,0 +1,257 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+/* ----- MOVILL -------- */
+
+body{
+  background-color:#1B3C73 ;
+}
+#app-titulo {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+#contenedor {
+  border: 1px solid white;
+  background-color:#01020583;
+  /* opacity: 1; */
+  border-radius: 3%;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  padding-top: 11px;
+}
+
+#datos {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+input[type='text']{
+  width: 15rem;
+  height: 2rem;
+  border-radius: 6px;
+  background-color: #e5e7eb;
+}
+
+.lista {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  min-height: 5rem;
+  max-height: 15rem;
+  overflow: auto;
+  border: 1px solid white;
+}
+
+li {
+  width: 100%;
+}
+
+.seleccionador {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  /* opacity: .50; */
+  border:1px solid white ;
+}
+
+.lista-eliminar {
+  width: 10%;
+  background-color:#1B3C73;
+  border:1px solid white;
+  width: 2.5rem;
+}
+button.lista-eliminar:active {
+  background-color: red;
+}
+p {
+  display: flex;
+  width: 100%;
+  text-align: justify;
+  /* background-color: grey; */
+  height: auto;
+  color: white;
+  overflow: hidden;
+  margin: 9px;
+}
+
+.lista-aprovado {
+  width: 10%;
+  background-color:#1B3C73;
+  border:1px solid white;
+  width: 2.5rem;
+}
+button.lista-aprovado:active {
+  background-color: green;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 5px;
+  padding: 0.25rem 0.70rem;
+  color:white;
+}
+.btn1{
+  background-color: purple;
+}
+.btn2{
+  background-color: forestgreen;
+}
+.btn3{
+  background-color: purple;
+}
+
+@media (min-width: 375px) {
+  input[type='text'] {
+    width: 18rem;
+    height: 2rem;
+    border-radius: 6px;
+    background-color: #e5e7eb;
+  }
+}
+
+@media (min-width: 425px) {
+  input[type='text'] {
+    width: 21rem;
+    height: 2rem;
+    border-radius: 6px;
+    background-color: #e5e7eb;
+  }
+  p{
+   overflow: hidden;
+   margin: 9px; 
+  }
+}
+
+@media (min-width: 768px) {
+  #contenedor{
+    margin: 5%;
+  }
+  
+  #app-titulo {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+}
+  input[type='text'] {
+    width: 35rem;
+    height: 3rem;
+    border-radius: 6px;
+    background-color: #e5e7eb;
+  }
+  input.submit {
+    width: 45px;
+  }
+  p{
+    overflow: hidden;
+    margin: 10px; 
+   }
+   .lista-eliminar{
+    width: 3rem;
+   }
+   .lista-aprovado{
+    width: 3rem;
+   }
+  .btn {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 5px;
+    padding: 1.25rem 1.7rem;
+    color: white;
+    border-radius: 9px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #contenedor{
+    padding: 4px 0;
+    margin :3%;
+   
+  }
+  
+  input[type="text"]{
+    width: 50rem;
+  }
+  .lista-eliminar{
+    width: 3rem;
+  }
+  
+  .lista-aprovado{
+    width: 3rem;
+  }
+  p{
+    overflow: hidden;
+    margin: 10px; 
+   }
+  .seleccionador{
+    height: 4rem;
+    
+  }
+ 
+  p{
+    text-align: justify;
+    overflow: hidden;
+    margin: 5px 9px;
+  }
+  .btn {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+ 
+}
+
+@media (min-width:1440px) {
+  #app-titulo {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+  }
+  #formulario {
+    padding-top: 24px;
+}
+  input[type='text'] {
+    width: 70rem;
+    height: 3rem;
+    
+  }
+  input.submit {
+    width: 55px;
+  }
+  p{
+    text-align: justify;
+    /* overflow: hidden; */
+    margin: 9px 10px;
+  }
+  .lista-eliminar {
+    width: 10%;
+    background-color: #1B3C73;
+    border: 1px solid white;
+    width: 4rem;
+  }
+  
+  
+  .lista-aprovado {
+    width: 10%;
+    background-color: #1B3C73;
+    border: 1px solid white;
+    width: 4rem;
+  } 
+}

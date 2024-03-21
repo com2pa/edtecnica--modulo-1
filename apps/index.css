@@ -1,0 +1,458 @@
+*{
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+    /* box-sizing: border-box; */
+}
+body{
+    background-color:#00224D ;
+}
+/* nav-bar */
+#nav-bar-menu-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+  }
+  
+  #nav-bar-logo {
+    margin: 0;
+  }
+  
+  #nav-bar {
+    background-color: #5b21b6;
+    height: 5rem;
+    padding: 0 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #nav-bar-container {
+    height: 5rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  #nav-bar-links-container {
+    display: none;
+    gap: 1rem;
+  }
+  
+  .link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  /* ------------------- final del menu */
+/* contenido */
+.contenedor-principal{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 100%;
+    align-items: center;
+    margin-top: 83px;
+
+}
+h1 {
+    color: white;
+    padding: 3%;
+    font-size: 3rem;
+}
+
+.cajasprincipal {
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 9px;
+    width: 80%;
+    padding: 9px 0;
+    /* box-shadow: 0 1rem 1rem rgb(240 224 224 / 20%); */
+    /* backdrop-filter: blur(1rem); */
+    background-color: rgb(139 112 112 / 27%);
+    color: white;
+}
+.contenedor-input {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 9px 0;
+}
+input[type="text"] {
+    border-radius: 4px;
+    padding: 0 9px;
+}
+input[type="image"] {
+    width: 30px;
+}
+ul{
+    padding-left: 0;
+    overflow: scroll;
+    min-height: 5rem;
+    max-height: 15rem;
+    /* padding-top:10px; */
+    border: 1px solid #fff;
+
+}   
+li{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #fff;
+}
+img {
+    width: 20px;
+    /* height: 26px; */
+}
+.menu-eliminar{
+    /* width: 10px; */
+    /* height: 30px; */
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.18) ;
+    justify-content: center;
+    
+}
+button.menu-eliminar:active {
+    background-color: red;
+}
+p{
+    width: 100%;
+    text-align: justify;
+    padding: 9px 6px;
+    border-radius:9px ;
+    /* background-color: brown; */
+}
+.menu-aprovado{
+    /* width: 10px; */
+    /* height: 30px; */
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: center;
+    background-color:rgba(255,255,255,0.18);
+}
+button.menu-aprovado:active {
+    background-color: green;
+}
+
+.cajatres{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+}
+button.cajatres-btn1 {
+    background-color:#6420AA;
+    padding: 2px 5px;
+    color: #fff;
+    border-radius: 6px;
+}
+button.cajatres-btn2 {
+    background-color:#9ADE7B;
+    padding: 2px 5px;
+    color: #fff;
+    border-radius: 6px;
+}
+button.cajatres-btn3 {
+    background-color:#FF204E;
+    padding: 2px 5px;
+    color: #fff;
+    border-radius: 6px;
+}
+footer {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    top: auto;
+}
+
+@media (min-width: 375px) {
+    .contenedor-principal {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        width: 100%;
+        align-items: center;
+    }
+    h1 {
+        
+        padding: 5%;
+        font-size: 3rem;
+    }
+    .cajasprincipal {
+        border: 1px solid rgba(255,255,255,0.18);
+        border-radius: 9px;
+        width: 85%;
+        padding: 9px 0;
+        /* box-shadow: 0 1rem 1rem rgb(240 224 224 / 20%); */
+        /* backdrop-filter: blur(1rem); */
+        background-color: rgb(139 112 112 / 27%);
+        color: white;
+    }
+    ul {
+        padding-left: 0;
+        overflow: scroll;
+        min-height: 5rem;
+        max-height: 15rem;
+        /* padding-top: 10px; */
+        border: 1px solid #fff;
+    }
+    .menu-aprovado {
+        padding: 10px;
+    }
+    .menu-eliminar {
+        padding: 10px;
+    }
+    input[type="text"] {
+        height: 35px;
+        width: 68%;
+    }
+    input[type="image"] {
+        width: 34px;
+    }
+
+}
+@media (min-width: 425px) {
+    h1 {
+        padding: 5%;
+        font-size: 3rem;
+    }
+    input[type="text"] {
+        height: 35px;
+        width: 71%;
+        border-radius: 12px;
+    }
+    input[type="image"] {
+        width: 34px;
+    }
+    .cajasprincipal {
+        width: 85%;
+    }
+    img {
+        width: 26px;
+        /* height: 26px; */
+    }
+    button.cajatres-btn1 {
+        padding: 4px 24px;
+
+    }
+    button.cajatres-btn2 {
+        padding: 4px 24px;
+
+    }
+    button.cajatres-btn3 {
+        padding: 4px 24px;
+
+    }
+}
+@media (min-width: 768px) {
+    #nav-bar-menu-btn{
+        display: none;
+    }
+    #nav-bar-links-container {
+        display: flex;
+    }
+    h1 {
+        padding: 2%;
+        font-size: 5rem;
+    }
+    .cajasprincipal {
+        width: 79%;
+    }
+    input[type="text"] {
+        height: 35px;
+        width: 78%;
+        border-radius: 12px;
+    }
+    p{
+        font-size: 1rem;
+    }
+    img {
+        width: 26px;
+        /* height: 26px; */
+    }
+}
+
+@media (min-width: 1024px) {
+    h2#nav-bar-logo {
+        font-size: 3rem;
+    }
+    div#nav-bar-links-container {
+        font-size: 1.25rem;
+    }
+    h1 {
+        padding: 2%;
+        font-size: 4rem;
+    }
+    input[type="text"] {
+        height: 35px;
+        width: 85%;
+        border-radius: 12px;
+        font-size: 1.25rem;
+    }
+    
+    img {
+        width: 35px;
+        
+    }
+    ul {
+        
+        min-height: 5rem;
+        max-height: 17rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .cajatres{
+        padding: 20px;
+    }
+    button.cajatres-btn1 {
+        padding: 4px 24px;
+        font-size: 1.25rem;
+        transition-duration: 1s;
+
+    }
+    button.cajatres-btn1:hover{
+        background-color: red;
+    }
+    button.cajatres-btn2 {
+        padding: 4px 24px;
+        font-size: 1.25rem;
+        transition-duration: 1s;
+
+    }
+    button.cajatres-btn2:hover{
+        background-color: red;
+    }
+    button.cajatres-btn3 {
+        padding: 4px 24px;
+        font-size: 1.25rem;
+        transition-duration: 1s;
+    } 
+    button.cajatres-btn3:hover{
+        background-color: white;
+        color: black;
+    }  
+}
+@media(min-width:1366px){
+    h1 {
+        padding: 1%;
+        font-size: 4rem;
+    }
+    .cajasprincipal {
+        width: 70%;
+    }
+    .contenedor-input {
+        
+        padding: 6px 0;
+    }
+    .cajatres {
+        padding: 15px;
+    }
+}
+@media (min-width: 1440px) {
+    h2#nav-bar-logo {
+        font-size: 3rem;
+    }
+    h2#nav-bar-logo {
+        font-size: 3rem;
+    }
+    div#nav-bar-links-container {
+        font-size: 1.8rem;
+    }
+    input[type="text"] {
+        height: 45px;
+        width: 85%;
+        
+        font-size: 1.5rem;
+    }
+    input[type="image"] {
+        width: 50px;
+    }
+    .contenedor-input {
+        padding: 10px 0;
+    }
+    .cajasprincipal {
+        
+        width: 85%;
+        padding: 12px 0;
+        
+    }
+
+    ul {
+        
+        min-height: 5rem;
+        max-height: 25rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+    
+    img {
+        width: 50px;
+        
+    }
+
+    button.cajatres-btn1 {
+        padding: 4px 24px;
+        font-size: 2rem;
+        transition-duration: 1s;
+
+    }
+    button.cajatres-btn1:hover{
+        background-color: red;
+    }
+    button.cajatres-btn2 {
+        padding: 4px 24px;
+        font-size: 2rem;
+        transition-duration: 1s;
+
+    }
+    button.cajatres-btn2:hover{
+        background-color: red;
+    }
+    button.cajatres-btn3 {
+        padding: 4px 24px;
+        font-size: 2rem;
+        transition-duration: 1s;
+    } 
+    button.cajatres-btn3:hover{
+        background-color: white;
+        color: black;
+    }  
+}
+@media (min-width: 2560px){
+    #nav-bar-container {
+        max-width: 144rem;
+    }
+    h2#nav-bar-logo {
+        font-size: 4rem;
+    }
+    div#nav-bar-links-container {
+        font-size: 3rem;
+    }
+    input[type="text"] {
+        height: 50px;
+        width: 90%;
+        border-radius: 12px;
+    }
+    input[type="image"] {
+        width: 70px;
+    }
+    ul {
+        min-height: 5rem;
+        max-height: 35rem;
+    }
+}
+    
