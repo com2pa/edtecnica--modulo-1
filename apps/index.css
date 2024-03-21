@@ -379,10 +379,10 @@ footer {
         font-size: 1.3rem;
     }
     input[type="text"] {
-        height: 45px;
+        height: 40px;
         width: 85%;
         
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     input[type="image"] {
         width: 50px;
@@ -393,14 +393,14 @@ footer {
     .cajasprincipal {
         
         width: 85%;
-        padding: 12px 0;
+        padding: 6px 0;
         
     }
 
     ul {
         
         min-height: 5rem;
-        max-height: 25rem;
+        max-height: 20rem;
     }
     p{
         font-size: 1rem;
@@ -411,10 +411,12 @@ footer {
         width: 45px;
         
     }
-
+    .cajatres {
+        padding: 7px;
+    }
     button.cajatres-btn1 {
         padding: 4px 24px;
-        font-size: 2rem;
+        font-size: 1rem;
         transition-duration: 1s;
 
     }
@@ -432,7 +434,7 @@ footer {
     }
     button.cajatres-btn3 {
         padding: 4px 24px;
-        font-size: 2rem;
+        font-size: 1rem;
         transition-duration: 1s;
     } 
     button.cajatres-btn3:hover{
