@@ -362,14 +362,21 @@ footer {
     }
 }
 @media (min-width: 1440px) {
-    h2#nav-bar-logo {
-        font-size: 3rem;
+    #nav-bar {
+        height: 4rem;
+        
     }
+    #nav-bar-container {
+        height: 4rem;
+        max-width: 80rem;
+        
+    }
+    
     h2#nav-bar-logo {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     div#nav-bar-links-container {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
     input[type="text"] {
         height: 45px;
@@ -396,11 +403,12 @@ footer {
         max-height: 25rem;
     }
     p{
-        font-size: 2rem;
+        font-size: 1rem;
+        padding: 7px 15px;
     }
     
     img {
-        width: 50px;
+        width: 45px;
         
     }
 
@@ -415,7 +423,7 @@ footer {
     }
     button.cajatres-btn2 {
         padding: 4px 24px;
-        font-size: 2rem;
+        font-size: 1rem;
         transition-duration: 1s;
 
     }
